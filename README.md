@@ -1,9 +1,6 @@
 # 📘 Task Tracker – Java 17 REST API Microservice
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Java](https://img.shields.io/badge/Java-17-blue)
+[![Coverage](https://codecov.io/gh/myemail4db/java17-springboot-task-tracker-rest-api-microservice/branch/main/graph/badge.svg)](https://codecov.io/gh/myemail4db/java17-springboot-task-tracker-rest-api-microservice)
 
 ## 📘 Project Overview
 
