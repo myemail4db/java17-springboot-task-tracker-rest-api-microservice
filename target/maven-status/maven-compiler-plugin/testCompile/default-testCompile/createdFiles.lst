@@ -1,0 +1,6 @@
+com\example\taskapi\service\TaskServiceImplTest.class
+com\example\taskapi\exception\GlobalExceptionHandlerTest.class
+com\example\taskapi\exception\GlobalExceptionHandlerTest$DummyController.class
+com\example\taskapi\integration\TaskIntegrationTest.class
+com\example\taskapi\controller\TaskControllerTest.class
+com\example\taskapi\repository\TaskRepositoryTest.class

@@ -1,0 +1,13 @@
+com\example\taskapi\exception\ErrorResponse.class
+com\example\taskapi\exception\GlobalExceptionHandler.class
+com\example\taskapi\controller\TaskController.class
+com\example\taskapi\entity\Task.class
+com\example\taskapi\service\TaskService.class
+com\example\taskapi\repository\TaskRepository.class
+com\example\taskapi\dto\TaskRequestDTO.class
+com\example\taskapi\exception\AppException.class
+com\example\taskapi\dto\TaskResponseDTO.class
+com\example\taskapi\exception\TaskNotFoundException.class
+com\example\taskapi\TaskApiApplication.class
+com\example\taskapi\service\TaskServiceImpl.class
+com\example\taskapi\exception\ValidationException.class
