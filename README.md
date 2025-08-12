@@ -1,17 +1,17 @@
-# 📘 Task Tracker – Java 17 REST API Microservice
+# Task Tracker – Java 17 REST API Microservice
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Java](https://img.shields.io/badge/Java-17-blue)
 
-## 📘 Project Overview
+## Project Overview
 
 This project is a full-featured, **enterprise-grade REST API microservice** built using Java 17 and Spring Boot 3. It simulates a task tracking system that demonstrates how to design, implement, test, document, and deploy a real-world backend application. It also incorporates features from the Java 17 Developer Certification to reinforce modern language capabilities.
 
 ---
 
-## 🔍 Purpose of the Project
+## Purpose of the Project
 
 To build a professional, maintainable RESTful backend microservice that follows full SDLC practices — including requirements gathering, high-level and detailed design documentation, development, testing, deployment, and CI/CD setup. The project is designed to:
 - Serve as a **resume-quality artifact**
@@ -20,7 +20,7 @@ To build a professional, maintainable RESTful backend microservice that follows 
 
 ---
 
-## 🎯 Purpose of the Application
+## Purpose of the Application
 
 This RESTful Task Tracker application allows users (or client applications) to:
 - Create new tasks
@@ -36,7 +36,7 @@ It models a clean, modular architecture that enables:
 
 ---
 
-## 🧠 Project Planning
+## Project Planning
 
 ### Functional Scope
 - Full CRUD functionality for tasks
@@ -60,35 +60,38 @@ It models a clean, modular architecture that enables:
 
 ---
 
-## 📑 Architecture & Documentation
+## Architecture & Documentation
 
-- ✅ High-Level Design (HLD): System context, layered architecture, request/response flow  
-- ✅ Detailed Design (DD): Component breakdown, DTOs, service interactions, class responsibilities  
-- ✅ Logging strategy: trace-level observability across components  
-- ✅ API contracts and Swagger UI endpoint documentation  
+- High-Level Design (HLD): System context, layered architecture, request/response flow  
+- Detailed Design (DD): Component breakdown, DTOs, service interactions, class responsibilities  
+- Logging strategy: trace-level observability across components  
+- API contracts and Swagger UI endpoint documentation  
 
-> Design documentation can be found in the [`/docs`] directory.
-> - [HighLevelDesign.md](./docs/HighLevelDesign.md)
-> - [DetailedLevelDesign.md](./docs/DetailedLevelDesign.md)
+> Design documentation can be found in the [`/docs/designs`] directory.
+> - [HighLevelDesign.md](./docs/designs/HighLevelDesign.md)
+> - [DetailedLevelDesign.md](docs/designs/DetailLevelDesign.md)
 
----
-
-## 🚀 Features
-
-- ✅ Java 17 language features: `record`, `sealed`, `switch`, pattern matching
-- ✅ Spring Boot 3 REST API
-- ✅ DTO validation using Jakarta Bean Validation
-- ✅ Custom exception handling
-- ✅ OpenAPI 3.0 documentation with Swagger UI
-- ✅ Console and file logging (SLF4J + Logback)
-- ✅ 100% unit and integration test coverage
-- ✅ MySQL (dev) and H2 (test) database profiles
-- ✅ Maven packaging (`java -jar`)
-- ✅ Dev and prod environment configs
+> Breakdown of Code documentation can be found in the ['docs/breakdownOfCode'] directory.
+> - [TaskController.java - Line-by-line Breakdown.md](./docs/breakdownOfCode/TaskController.java%20-%20Line-by-Line%20Breakdown.md)
 
 ---
 
-## 🔧 Technologies
+## Features
+
+- Java 17 language features: `record`, `sealed`, `switch`, pattern matching
+- Spring Boot 3 REST API
+- DTO validation using Jakarta Bean Validation
+- Custom exception handling
+- OpenAPI 3.0 documentation with Swagger UI
+- Console and file logging (SLF4J + Logback)
+- 100% unit and integration test coverage
+- MySQL (dev) and H2 (test) database profiles
+- Maven packaging (`java -jar`)
+- Dev and prod environment configs
+
+---
+
+## Technologies
 
 | Layer         | Technology                        |
 |--------------|------------------------------------|
@@ -106,7 +109,7 @@ It models a clean, modular architecture that enables:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 docs/
@@ -132,7 +135,7 @@ src/
 
 ---
 
-## ⚙️ Running the Application
+## Running the Application
 
 ### Prerequisites
 - Java 17
@@ -147,7 +150,7 @@ java -jar target/task-api.jar --spring.profiles.active=dev
 
 ---
 
-## 🌐 API Documentation
+## API Documentation
 
 Open after starting the app:
 ```bash
@@ -156,7 +159,7 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 🧪 Testing & Coverage
+## Testing & Coverage
 
 ```bash
 # Run tests
@@ -180,18 +183,18 @@ open target/site/jacoco/index.html
 
 ---
 
-## 🛠️ GitHub Actions CI (Placeholder)
+## GitHub Actions CI (Placeholder)
 
 Basic build/test workflow runs on every push to main. See .github/workflows/build.yml.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Open to improvements or enhancements. Feel free to fork, open PRs, or file issues.

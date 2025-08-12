@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 /**
-   🟢 This is the standard Spring Boot bootstrap class, annotated with @SpringBootApplication, which:
+   This is the standard Spring Boot bootstrap class, annotated with @SpringBootApplication, which:
     - Enables component scanning
     - Enables auto-configuration
     - Starts the embedded server (when running java -jar)

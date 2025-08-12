@@ -1,16 +1,16 @@
-# 🧱 High-Level Design (HLD)
+# High-Level Design (HLD)
 
-## 1. 📌 **Overview**
+## 1. **Overview**
 This application is designed using a layered architecture that separates concerns between presentation, service, and persistence layers. It follows the typical enterprise microservice structure with clear responsibilities and support for scalability, maintainability, and testability.
 
-## 2. 🔄 **Data Flow Summary**
+## 2. **Data Flow Summary**
 ```
 [Client/UI] → [REST Controller] → [Service Layer] → [Repository Layer] → [Database]
                                                        ↓
                                                   [Logging Layer]
 ```
 
-## 3. ⚙️ **Components**
+## 3. **Components**
 | Component        | Responsibility                                                                 |
 |------------------|----------------------------------------------------------------------------------|
 | Controller       | Accept HTTP requests, validate input, route to service                          |
@@ -22,16 +22,16 @@ This application is designed using a layered architecture that separates concern
 | Logging          | SLF4J-based structured logging for tracing and debugging                        |
 | Config           | Profile-based configuration for dev and prod                                   |
 
-## 4. 📘 **API Contracts** (Planned)
+## 4. **API Contracts** (Planned)
 - `POST /api/tasks` - Create a new task
 - `GET /api/tasks` - Get all tasks
 - `GET /api/tasks/{id}` - Get a task by ID
 
-## 5. 🔐 **Security (Enterprise Ready)**
+## 5. **Security (Enterprise Ready)**
 - JWT-based stateless authentication (planned for extension)
 - Role-based access (admin/user separation)
 
-## 6. 📦 **Deployment Strategy**
+## 6. **Deployment Strategy**
 - Use `java -jar` to deploy packaged JAR
 - Environment-specific configs through profiles
 - Logs written to console and `logs/app.log`

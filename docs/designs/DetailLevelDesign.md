@@ -1,6 +1,6 @@
-# 🧮 Low-Level Design (LLD)
+# Low-Level Design (LLD)
 
-## 📦 Entity Design
+## Entity Design
 ```java
 @Entity
 public class Task {
@@ -22,7 +22,7 @@ public class Task {
 }
 ```
 
-## 🔄 DTO Structure
+## DTO Structure
 ```java
 public class TaskRequestDTO {
     @NotBlank
@@ -39,7 +39,7 @@ public class TaskResponseDTO {
 }
 ```
 
-## 💡 Service Layer
+## Service Layer
 ```java
 public interface TaskService {
     TaskResponseDTO createTask(TaskRequestDTO request);
@@ -54,7 +54,7 @@ public class TaskServiceImpl implements TaskService {
 }
 ```
 
-## 🌐 Controller Layer
+## Controller Layer
 ```java
 @RestController
 @RequestMapping("/api/tasks")
@@ -71,7 +71,7 @@ public class TaskController {
 }
 ```
 
-## 📓 Exception Handling
+## Exception Handling
 ```java
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -84,13 +84,13 @@ public class GlobalExceptionHandler {
 }
 ```
 
-## 🧪 Testing Strategy
+## Testing Strategy
 - Unit tests for controller, service, repository
 - Mocked services using Mockito
 - In-memory H2 DB for repository tests
 - Code coverage tracked with JaCoCo
 
-## ✅ Replace DTOs with Java 17 record:
+## Replace DTOs with Java 17 record:
 ```java
 public record TaskRequestDTO(
     @NotBlank String title,
@@ -106,7 +106,7 @@ public record TaskResponseDTO(
 ) {}
 ```
 
-## ✅ Use sealed exceptions with enhanced switch:
+## Use sealed exceptions with enhanced switch:
 ```java
 public sealed interface AppException permits TaskNotFoundException, ValidationException {}
 
@@ -133,7 +133,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-## 🔄 DTO Structure (Java 17 Record)
+## DTO Structure (Java 17 Record)
 ```java
 public record TaskRequestDTO(
     @NotBlank String title,
@@ -151,7 +151,7 @@ public record TaskResponseDTO(
 
 ---
 
-## 📓 Exception Handling (Java 17 Sealed Classes)
+## Exception Handling (Java 17 Sealed Classes)
 ```java
 public sealed interface AppException permits TaskNotFoundException, ValidationException {}
 
